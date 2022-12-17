@@ -1,0 +1,53 @@
+body{
+    background-image: linear-gradient(to right, rgb(7, 7, 7), rgba(0, 0, 0, 0.637));
+}
+
+.card-menu{
+    display: flex;
+    justify-content: space-between;
+    margin: 2%;
+    color: aliceblue;
+}
+
+.card-menu-pages{
+    display: flex;
+    gap: 40px;
+}
+
+.page-menu-link{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+/* Parte de Cadastrar as informações*/
+
+.container{
+    height: 350px;
+    width: 69%;
+    background-color: black;
+    color: white;
+    display:flex
+}
+
+.card-principal{
+    height: 250px;
+    width: 50%;
+    background-color:rgb(29, 27, 27);
+    background-image: url("../img/img1.webp");
+    border-radius: 12px;
+    margin-top: 5%;
+}
+
+.card-cadastrar{
+    height: 250px;
+    width: 40%;
+    margin: 2%;
+}
+
+input{
+  padding: 7px 7px 7px 7px;
+}
+
+.button1{
+    padding: 7px 7px 7px 7px;
+}
