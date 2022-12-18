@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <title>Card - Project</title>
 </head>
 <body>
@@ -19,11 +20,12 @@
       <div class="container">
         <div class="card-cadastrar">
             <h2>Informações</h2>
-            <input id="nome" placeholder="Digite seu nome!">
-            <input id="conta" placeholder="Digite o Nº da conta!">
-            <input id="agencia" placeholder="Digite sua Agência!">
+            <input id="nome" placeholder="Digite seu nome">
+            <input id="number-principal" placeholder="Digite o N° principal">
+            <input id="conta" placeholder="Digite o Nº da conta">
+            <input id="agencia" placeholder="Digite sua Agência">
             <br>
-            <button onclick="inserir()" class="button1"> Inserir Informações</button>
+            <button class="button1" onClick="inserir()"> Inserir Informações</button>
         </div>
 
       <div class="card-principal">
@@ -33,14 +35,31 @@
             <div class="card-navbar">
             <p class="card-text">Cartão de <span>Todos</span></p>
           </div>
+
+          <div class="imprimir_nome">
+          <h4>Nome</h4>
+          <h4 id="imprimir_nome"></h4>
+           </div>
           </div>
 
-      <div class="img3-img4">
+      <div class="card-inform">
+        <h5>N° Conta</h5>
+        <h5>Agência</h5>
+        <div class="img3-img4">
         <img src="img/img3.png" class="img3">
         <img src="img/img4.png" class="img4">
       </div>
       </div>
+
+      <div class="imprimir-informs">
+      <h4 id="imprimir_conta"></h4>
+      <h4 id="imprimir_agencia"></h4>
+      <h4 class="master-card">mastercard</h4>
     </div>
+    </div>
+  </div>
+
     <button onclick="imprimir()" class="button2"> Imprimir Cartão</button>
+    <script src="js/main.js"></script>
 </body>
 </html>
